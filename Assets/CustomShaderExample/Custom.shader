@@ -67,7 +67,7 @@ Shader "Custom/Custom"
             final.rgb = DiffColor.rgb + SpecColor.rgb  + rimColor.rgb + rimColor2.rgb;
             final.a = surface.Alpha;
 
-            return float4(SpecColor,1);
+            return final;
         }
         ENDCG
     }
